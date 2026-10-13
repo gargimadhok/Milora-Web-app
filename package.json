@@ -1,0 +1,6 @@
+{
+  "name": "milora-pricing-intelligence",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=18" }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Milora Tech — Pricing Intelligence for Footwear &amp; Apparel Brands</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Syne:wght@700;800&amp;display=swap" rel="stylesheet">
+<style>
+:root,[data-theme="dark"]{--bg:#0B1B33;--bg-alt:#0E1826;--card:#142235;--border:rgba(255,255,255,0.08);--border-strong:rgba(255,255,255,0.22);--heading:#FFFFFF;--body:rgba(232,238,248,0.78);--muted:#8A9AB5;--nav:rgba(255,255,255,0.72);--accent-text:#00C9A7;--accent-head:#00C9A7;--ghost-hover:rgba(255,255,255,0.06);--chip-bg:rgba(0,201,167,0.12);--chip-hover:rgba(0,201,167,0.22);--chip-border:rgba(0,201,167,0.4);--chip-text:#00C9A7;--shadow:0 40px 120px rgba(0,0,0,0.45),0 0 0 1px rgba(255,255,255,0.08);}
+[data-theme="light"]{--bg:#F7F9FC;--bg-alt:#EAF0F8;--card:#FFFFFF;--border:rgba(11,27,51,0.10);--border-strong:rgba(11,27,51,0.22);--heading:#0B1B33;--body:#4A5568;--muted:#5F6E87;--nav:#4A5568;--accent-text:#007A65;--accent-head:#00957A;--ghost-hover:rgba(11,27,51,0.05);--chip-bg:rgba(0,201,167,0.12);--chip-hover:rgba(0,201,167,0.22);--chip-border:rgba(0,149,122,0.4);--chip-text:#007A65;--shadow:0 30px 80px rgba(11,27,51,0.18),0 0 0 1px rgba(11,27,51,0.08);}
+*{box-sizing:border-box;} html,body{margin:0;font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased;}
+a{color:#00C9A7;text-decoration:none;} a:hover{color:#5FE3CB;}
+a:focus-visible,button:focus-visible{outline:2px solid #00C9A7;outline-offset:3px;border-radius:6px;}
+</style>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#0B1B33"/><text x="50" y="64" text-anchor="middle" font-family="Arial" font-weight="800" font-size="44" fill="#00C9A7">M</text></svg></template>
+</helmet>
+<div data-theme="{{ theme }}" style="min-height:100vh;background:var(--bg);color:var(--heading);transition:background 0.25s,color 0.25s;">
+  <nav style="max-width:1200px;margin:0 auto;padding:22px 28px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+    <img src="assets/milora-logo.png" alt="Milora Tech logo" style="width:40px;height:40px;border-radius:10px;object-fit:cover;box-shadow:0 0 0 1px rgba(255,255,255,0.08);">
+    <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:20px;color:var(--heading);letter-spacing:-0.3px;">Milora Tech</div>
+    <div style="margin-left:auto;display:flex;align-items:center;gap:22px;font-size:15px;flex-wrap:wrap;">
+      <a href="#how" style="color:var(--nav);" style-hover="color:var(--heading);">How it works</a>
+      <a href="#documents" style="color:var(--nav);" style-hover="color:var(--heading);">Documents</a>
+      <button type="button" onClick="{{ toggleTheme }}" aria-label="{{ toggleLabel }}" title="{{ toggleLabel }}" style="width:40px;height:40px;border-radius:9px;border:1px solid var(--border-strong);background:transparent;color:var(--heading);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;padding:0;" style-hover="background:var(--ghost-hover);">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor" stroke="none"></path></svg>
+      </button>
+      <a href="dashboard.html" style="display:inline-flex;align-items:center;height:40px;padding:0 18px;border-radius:9px;border:1px solid var(--chip-border);background:var(--chip-bg);color:var(--chip-text);font-weight:600;" style-hover="background:var(--chip-hover);color:var(--chip-text);">Client login</a>
+    </div>
+  </nav>
+
+  <header style="max-width:1200px;margin:0 auto;padding:72px 28px 40px;">
+    <div style="font-size:13px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--accent-text);">Pricing intelligence for footwear &amp; apparel brands</div>
+    <h1 style="margin:18px 0 0;font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(48px,8.5vw,112px);line-height:0.98;letter-spacing:-0.03em;color:var(--heading);">From Weeks to <span style="color:var(--accent-head);">Minutes</span></h1>
+    <p style="margin:26px 0 0;max-width:640px;font-size:clamp(17px,1.6vw,20px);line-height:1.55;color:var(--body);text-wrap:pretty;">Upload a purchase order's invoices, freight bills and customs entries. Milora builds the fully loaded cost of every pair and the wholesale price that protects your margin.</p>
+    <div style="margin-top:34px;display:flex;gap:12px;flex-wrap:wrap;">
+      <a href="dashboard.html" style="display:inline-flex;align-items:center;height:52px;padding:0 26px;border-radius:10px;background:#00C9A7;color:#0B1B33;font-weight:700;font-size:16px;" style-hover="background:#33D6BA;color:#0B1B33;" style-active="background:#00A88C;">Open the dashboard</a>
+      <a href="mailto:hello@miloratech.com?subject=Milora%20demo" style="display:inline-flex;align-items:center;height:52px;padding:0 26px;border-radius:10px;border:1px solid var(--border-strong);color:var(--heading);font-weight:600;font-size:16px;" style-hover="background:var(--ghost-hover);color:var(--heading);">Request a demo</a>
+    </div>
+  </header>
+
+  <section style="max-width:1200px;margin:0 auto;padding:24px 28px 96px;">
+    <div style="position:relative;width:100%;aspect-ratio:16/10;border-radius:16px;overflow:hidden;background:#0B1B33;box-shadow:var(--shadow);">
+      <iframe src="Milora Walkthrough.dc.html" title="Milora product walkthrough" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0;"></iframe>
+    </div>
+    <div style="margin-top:14px;font-size:14px;color:var(--muted);">A Macy's Spring/Summer 2025 order: 7 documents, 1,240 pairs, priced in 35 seconds.</div>
+  </section>
+
+  <section id="how" style="background:var(--bg-alt);color:var(--heading);transition:background 0.25s;">
+    <div style="max-width:1200px;margin:0 auto;padding:96px 28px;">
+      <h2 style="margin:0;font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(34px,4.5vw,52px);letter-spacing:-0.02em;line-height:1.05;">How it works</h2>
+      <div style="margin-top:48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:40px;">
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:44px;color:var(--accent-head);line-height:1;">01</div>
+          <div style="font-size:21px;font-weight:700;">Upload the PO</div>
+          <div style="font-size:16px;line-height:1.6;color:var(--body);text-wrap:pretty;">Drop in the commercial invoice, packing list, air waybill or bill of lading, CBP 7501 and freight invoice. PDF, XLSX, CSV, images or EDI.</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:44px;color:var(--accent-head);line-height:1;">02</div>
+          <div style="font-size:21px;font-weight:700;">Milora reads every line</div>
+          <div style="font-size:16px;line-height:1.6;color:var(--body);text-wrap:pretty;">Factory cost, freight, duty by HTS line including Section 301 and ADD, MPF, brokerage, terminal and delivery fees, each traced to its source document.</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:44px;color:var(--accent-head);line-height:1;">03</div>
+          <div style="font-size:21px;font-weight:700;">Price with confidence</div>
+          <div style="font-size:16px;line-height:1.6;color:var(--body);text-wrap:pretty;">Add fulfillment, storage, outbound and retailer compliance costs, set your margin, and get the landed cost and wholesale price per pair and per SKU.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="documents" style="background:var(--bg-alt);color:var(--heading);transition:background 0.25s;">
+    <div style="max-width:1200px;margin:0 auto;padding:0 28px 104px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:48px;align-items:start;">
+      <div>
+        <h2 style="margin:0;font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(34px,4.5vw,52px);letter-spacing:-0.02em;line-height:1.05;">Built from the paperwork you already have</h2>
+        <p style="margin:20px 0 0;max-width:460px;font-size:17px;line-height:1.6;color:var(--body);text-wrap:pretty;">Every cost in the model links back to the document it came from, so your team and your retailer can check the math.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;">
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;"><div style="font-size:16px;font-weight:600;">Commercial Invoice</div><div style="font-size:13px;color:var(--muted);margin-top:3px;">Factory cost by style</div></div>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;"><div style="font-size:16px;font-weight:600;">Packing List</div><div style="font-size:13px;color:var(--muted);margin-top:3px;">Cartons, pairs, weights</div></div>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;"><div style="font-size:16px;font-weight:600;">Air Waybill / Bill of Lading</div><div style="font-size:13px;color:var(--muted);margin-top:3px;">Route and chargeable weight</div></div>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;"><div style="font-size:16px;font-weight:600;">Arrival Notice</div><div style="font-size:13px;color:var(--muted);margin-top:3px;">Port, dates, free time</div></div>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;"><div style="font-size:16px;font-weight:600;">Customs Bond (CBP 301)</div><div style="font-size:13px;color:var(--muted);margin-top:3px;">Bond and surety</div></div>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;"><div style="font-size:16px;font-weight:600;">Entry Summary (CF 7501)</div><div style="font-size:13px;color:var(--muted);margin-top:3px;">Duty by HTS line, MPF</div></div>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;"><div style="font-size:16px;font-weight:600;">Freight &amp; Logistics Invoice</div><div style="font-size:13px;color:var(--muted);margin-top:3px;">Freight, handling, delivery</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1200px;margin:0 auto;padding:104px 28px;">
+    <h2 style="margin:0;max-width:780px;font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(34px,5vw,60px);letter-spacing:-0.02em;line-height:1.05;color:var(--heading);">Price your next PO <span style="color:var(--accent-head);">in minutes.</span></h2>
+    <div style="margin-top:32px;display:flex;gap:12px;flex-wrap:wrap;">
+      <a href="dashboard.html" style="display:inline-flex;align-items:center;height:52px;padding:0 26px;border-radius:10px;background:#00C9A7;color:#0B1B33;font-weight:700;font-size:16px;" style-hover="background:#33D6BA;color:#0B1B33;" style-active="background:#00A88C;">Open the dashboard</a>
+      <a href="mailto:hello@miloratech.com?subject=Milora%20demo" style="display:inline-flex;align-items:center;height:52px;padding:0 26px;border-radius:10px;border:1px solid var(--border-strong);color:var(--heading);font-weight:600;font-size:16px;" style-hover="background:var(--ghost-hover);color:var(--heading);">Request a demo</a>
+    </div>
+  </section>
+
+  <footer style="max-width:1200px;margin:0 auto;padding:28px 28px 40px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;font-size:14px;color:var(--muted);border-top:1px solid var(--border);">
+    <div>© 2026 Milora Tech</div>
+    <div style="margin-left:auto;display:flex;gap:22px;">
+      <a href="dashboard.html" style="color:var(--muted);" style-hover="color:var(--heading);">Client login</a>
+      <a href="mailto:hello@miloratech.com" style="color:var(--muted);" style-hover="color:var(--heading);">Contact</a>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;defaultTheme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;system&quot;,&quot;dark&quot;,&quot;light&quot;],&quot;default&quot;:&quot;system&quot;,&quot;tsType&quot;:&quot;'system' | 'dark' | 'light'&quot;}}">
+class Component extends DCLogic {
+  state = { theme: null };
+  componentDidMount() {
+    let saved = null;
+    try { saved = localStorage.getItem('milora-theme'); } catch (e) {}
+    const def = this.props.defaultTheme ?? 'system';
+    const sys = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    this.setState({ theme: saved || (def === 'system' ? sys : def) });
+  }
+  componentDidUpdate(prev) {
+    if (prev.defaultTheme !== this.props.defaultTheme && this.props.defaultTheme && this.props.defaultTheme !== 'system') {
+      this.setState({ theme: this.props.defaultTheme });
+    }
+  }
+  renderVals() {
+    const theme = this.state.theme || 'dark';
+    return {
+      theme,
+      toggleLabel: theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode',
+      toggleTheme: () => {
+        const next = theme === 'dark' ? 'light' : 'dark';
+        try { localStorage.setItem('milora-theme', next); } catch (e) {}
+        this.setState({ theme: next });
+      },
+    };
+  }
+}
+</script>
+</body>
+</html>
